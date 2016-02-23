@@ -8,6 +8,8 @@
  * handler on the coverage data.
  */
 
+phantom.args = require('system').args.slice(1);
+
 if (phantom.args.length < 2) {
     console.error('Usage: phantomjs phantom_jasmine_runner.js <page> <spec> [<covg_output> [<default jasmine timeout>]');
     console.error('  <page> is the path to the HTML page to load');
