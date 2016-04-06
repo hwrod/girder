@@ -12,6 +12,7 @@
 !mongo_search/
 !oauth/
 !provenance/
+!s3_bucket_watch/
 !thumbnails/
 !user_quota/
 !vega/
