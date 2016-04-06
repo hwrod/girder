@@ -10,14 +10,14 @@ PLUGIN = {
 # Options #
 ###########
 
-# Define the name of the S3 bucket we're working with.
-BucketName = 'datasift-girder-test'
+# TODO: These should be configurable via the Plugins admin panel.
 
-# Define the Girder folder ID we're working with.
+# Define the name of the S3 bucket we're importing files from.
+# TODO: make this an iterable
+BucketName = 'datasift-girder-test' 
+
+# Define the Girder folder ID we'll import files to.
 gcFolderId = '5702c721d199ae38cf41479d'
-
-# Define the local file path for downloaded files from S3 bucket.
-fileBasePath = '/tmp/'
 
 ###########
 # Imports #
@@ -47,6 +47,9 @@ userModel = ModelImporter.model('user')
 #########
 # Setup #
 #########
+
+# Define the local file path for downloaded files from S3 bucket.
+fileBasePath = '/tmp/'
 
 # Set up the S3 API.
 s3 = boto3.resource('s3')
