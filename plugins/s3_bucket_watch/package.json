@@ -1,0 +1,12 @@
+{
+  "name": "s3-bucket-watch",
+  "version": "1.0.0",
+  "description": "Watch S3 buckets for file changes and import them.",
+  "dependencies": ["jobs"],
+  "keywords": [
+    "girder",
+    "s3",
+    "import"
+  ],
+  "license": "Apache-2.0"
+}

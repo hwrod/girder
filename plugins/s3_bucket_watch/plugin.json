@@ -1,0 +1,6 @@
+{
+    "name": "S3 Bucket Watch",
+    "description": "Watch S3 buckets for file changes and import them.",
+    "dependencies": ["jobs"],
+    "version": "1.0.0"
+}
